@@ -19,15 +19,16 @@
 
 .nav-item a {
   text-decoration: none;
-  color: #fefefe;
+  color: black;
+  font-size: 20px;
 }
 
 .nav-item a:hover,
 .nav-item a:active {
-  color: #b4b4b4;
+  color: rgb(233, 199, 138);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .nav-list {
     display: block;
   }
@@ -37,7 +38,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 991px) {
   .nav-list {
     display: flex;
   }

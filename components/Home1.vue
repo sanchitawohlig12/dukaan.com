@@ -20,9 +20,25 @@
           style="border: black 2px solid; height: 100%"
         >
           <v-sheet
+            v-if="!$vuetify.breakpoint.smAndDown"
             class="mx-auto"
             max-width="244"
             style="margin-top: 30%; margin-left: 25%; text-align: center"
+          >
+            <v-card-text>
+              <h1 style="padding: 10%; font-weight: normal; font-size: 22px">
+                Can your Indian Dukaan or Product or Service become part of the
+                story to make India shine? Become part of the Dukaan.com
+                movement and reach millions of customers.
+              </h1>
+              <v-btn class="btn" rounded large> Join Us </v-btn>
+            </v-card-text>
+          </v-sheet>
+          <v-sheet
+            v-if="$vuetify.breakpoint.smAndDown"
+            class="mx-auto"
+            max-width="244"
+            style="margin-top: 10%; margin-left: 25%; text-align: center"
           >
             <v-card-text>
               <h1 style="padding: 10%; font-weight: normal; font-size: 22px">
@@ -116,5 +132,9 @@ h1 {
 .btn {
   background-image: linear-gradient(blue, red);
   color: white;
+}
+@media only screen and (max-width: 991px) {
+  .mx-auto {
+  }
 }
 </style>

@@ -34,7 +34,8 @@ header {
   display: grid;
   grid-template: 60px / auto 1fr;
   align-items: center;
-  background-color: #333;
+  background-color: white;
+  border: rgb(218, 125, 5) 5px solid;
 }
 
 .app-links {
@@ -43,18 +44,22 @@ header {
 
 .brand-name {
   margin: 0 10px;
-  font-size: 1.3rem;
+  font-size: 2.3rem;
+  border-right: rgb(218, 125, 5) 5px solid;
+  width: 200%;
+  text-align: center;
+  margin-left: -35%;
 }
 
 .brand-name a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .drawer-toggle .bar {
   width: 90%;
   height: 2px;
-  background-color: white;
+  background-color: black;
 }
 
 .drawer-toggle {
@@ -68,7 +73,7 @@ header {
   cursor: pointer;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   header {
     padding: 0 16px;
   }
@@ -80,7 +85,7 @@ header {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 991px) {
   header {
     padding: 0 64px;
   }

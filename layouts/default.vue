@@ -1,6 +1,7 @@
 <template>
   <div class="app-container">
     <Header />
+    <Sidenav />
 
     <v-main class="app-content">
       <nuxt />
@@ -11,12 +12,18 @@
 <script>
 import Header from '~/components/Header'
 // import Footer from '~/components/Footer'
-// import SideNav from '~/components/SideNav'
+import Sidenav from '~/components/Sidenav'
 export default {
   components: {
     Header,
 
     // Footer,
+    Sidenav,
+  },
+  computed: {
+    isSidebar() {
+      return this.$store.getters['nav/toggleSidebar']
+    },
   },
 }
 </script>

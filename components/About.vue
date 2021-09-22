@@ -11,7 +11,9 @@
       <v-col><v-divider dark color="black"></v-divider></v-col>
       <h1></h1>
 
-      <v-col><v-divider dark color="black"></v-divider></v-col>
+      <v-col v-if="!$vuetify.breakpoint.smAndDown"
+        ><v-divider dark color="black"></v-divider
+      ></v-col>
     </v-row>
     <br />
     <br />
@@ -77,5 +79,10 @@
 }
 ul {
   color: rgb(128, 128, 128);
+}
+@media only screen and (max-width: 991px) {
+  .container {
+    margin-left: 50px;
+  }
 }
 </style>

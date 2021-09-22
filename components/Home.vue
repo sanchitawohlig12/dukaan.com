@@ -2,7 +2,7 @@
   <div>
     <v-row no-gutters>
       <v-col cols="12" sm="6" no-gutters>
-        <div class="img1border" style="border: black 2px solid">
+        <div class="img1border" style="border: black 2px solid; width: 100%">
           <img
             class="img1"
             src="https://static.wixstatic.com/media/nsplsh_6d4d366355563342394d38~mv2_d_3600_2400_s_4_2.jpg/v1/fill/w_569,h_916,al_c,q_85,usm_0.66_1.00_0.01/nsplsh_6d4d366355563342394d38~mv2_d_3600_2400_s_4_2.webp"
@@ -15,9 +15,9 @@
           class="mx-autoborder"
           style="border: black 2px solid; height: 100%"
         >
-          <v-sheet class="mx-auto" max-width="244">
+          <v-sheet class="mx-auto" max-width="344">
             <v-card-text>
-              <h2>Curating the finest</h2>
+              <h2 class="cure">Curating the finest</h2>
               <br />
 
               <div class="text">
@@ -188,7 +188,7 @@
           </v-sheet> -->
         </div>
       </v-col>
-      <v-col cols="12" sm="3">
+      <v-col v-if="!$vuetify.breakpoint.smAndDown" cols="12" sm="3">
         <div
           class="img2border"
           style="
@@ -201,6 +201,39 @@
           "
         >
           <br /><br /><br /><br /><br /><br />
+          <v-icon style="color: white; font-size: 50px; margin-left: 10%"
+            >mdi-check-circle-outline</v-icon
+          ><span style="color: white; padding-left: 10%">Home Products</span>
+          <br />
+          <br />
+          <v-icon style="color: white; font-size: 50px; margin-left: 10%"
+            >mdi-check-circle-outline</v-icon
+          ><span style="color: white; padding-left: 10%">Grocery</span>
+          <br />
+          <br />
+          <v-icon style="color: white; font-size: 50px; margin-left: 10%"
+            >mdi-check-circle-outline</v-icon
+          ><span style="color: white; padding-left: 10%">Education</span>
+          <br />
+          <br />
+          <v-icon style="color: white; font-size: 50px; margin-left: 10%"
+            >mdi-check-circle-outline</v-icon
+          ><span style="color: white; padding-left: 10%">Electronics</span>
+        </div>
+      </v-col>
+      <v-col v-if="$vuetify.breakpoint.smAndDown" cols="12" sm="3">
+        <div
+          class="img2border"
+          style="
+            border: black 2px solid;
+            width: 107%;
+            height: 100%;
+            text-align: left;
+            font-size: 200%;
+            background-color: black;
+          "
+        >
+          <br /><br />
           <v-icon style="color: white; font-size: 50px; margin-left: 10%"
             >mdi-check-circle-outline</v-icon
           ><span style="color: white; padding-left: 10%">Home Products</span>
@@ -238,7 +271,16 @@
   margin-left: 5%;
 }
 .text {
-  font-size: 120%;
+  font-size: 160%;
   padding: 10%;
+}
+.mx-autoborder {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+@media only screen and (max-width: 991px) {
+  .mx-auto {
+    margin-top: 10%;
+    margin-left: 19%;
+  }
 }
 </style>
