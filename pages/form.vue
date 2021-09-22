@@ -232,14 +232,15 @@ input[type='submit'] {
     <br />
     <v-snackbar
       v-model="snackbar"
+      class="snackbar"
       absolute
+      light
       top
       center
-      color="success"
       style="top: 10%"
     >
-      <span>Registration successful!</span>
-      <v-icon dark> mdi-checkbox-marked-circle </v-icon>
+      <span style="color: green">Registration successful!</span>
+      <v-icon style="color: green"> mdi-checkbox-marked-circle </v-icon>
     </v-snackbar>
     <form ref="form" style="font-size: 25px" @submit.prevent="submit">
       <v-row>
@@ -508,6 +509,7 @@ input[type='submit'] {
 h1 {
   font-weight: bold;
 }
+
 @media only screen and (max-width: 991px) {
   input[type='submit'] {
     border: black 2px solid;

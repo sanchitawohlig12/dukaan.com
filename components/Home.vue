@@ -109,7 +109,7 @@
         >
           <img
             class="img3"
-            style="height: 99%; width: 98%"
+            style="height: 100%; width: 100%"
             src="https://qph.fs.quoracdn.net/main-qimg-97f8405b90a3be2e3de7ce1c18d54a5f-mzj"
             alt=""
           />
@@ -163,7 +163,7 @@
         >
           <img
             class="img3"
-            style="height: 99%; width: 98%"
+            style="height: 100%; width: 100%"
             src="https://lh3.googleusercontent.com/FQhxGwIwhP-JkzhSUpDVQPv8w_gFzWthWstsRzWFj11CtwOnxgln2STj6jJDxhkbOokOi3EC-YVxsh3n_GfaaUWzoQ=w512"
             alt=""
           />
@@ -275,7 +275,7 @@
   padding: 10%;
 }
 .mx-autoborder {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: italic;
 }
 @media only screen and (max-width: 991px) {
   .mx-auto {
